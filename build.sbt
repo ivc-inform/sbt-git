@@ -6,11 +6,10 @@ developers := List(Developer("jsuereth", "Josh Suereth", "joshua suereth gmail c
 startYear := Some(2011)
 homepage := scmInfo.value map (_.browseUrl)
 scmInfo := Some(ScmInfo(url("https://github.com/sbt/sbt-git"), "scm:git:git@github.com:sbt/sbt-git.git"))
+version := "0.9.3"
+
 
 sbtPlugin := true
-
-enablePlugins(GitVersioning)
-git.baseVersion := "0.9"
 
 libraryDependencies ++= Seq(
   "org.eclipse.jgit" % "org.eclipse.jgit" % "4.9.0.201710071750-r"
